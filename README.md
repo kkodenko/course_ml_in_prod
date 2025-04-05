@@ -1,1 +1,1 @@
-# course_ml_in_prod
+# ML in Production: example of end-to-end solution
