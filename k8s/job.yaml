@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: churn-model-job
+spec:
+  template:
+    spec:
+      containers:
+        - name: churn-model-check
+          image: kodenko/churn_model:latest
+          command: ["curl", "http://localhost:5000"]
+      restartPolicy: Never
