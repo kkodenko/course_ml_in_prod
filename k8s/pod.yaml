@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: churn-model-pod
+spec:
+  containers:
+    - name: churn-model
+      image: kodenko/churn_model:latest
+      ports:
+        - containerPort: 5000
